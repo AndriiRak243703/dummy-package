@@ -1,0 +1,22 @@
+[project]
+name = "dummy-package"
+version = "0.1.0"
+description = "A simple Python package that predicts the next number in a sequence using linear regression. Built for learning purposes - exploring packaging, CLI tools, Docker, and publishing."
+authors = [
+    {name = "AndriiRak243703",email = "243703@buas.nl"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy (>=2.4.4,<3.0.0)",
+    "scikit-learn (>=1.8.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.packages]]
+include = "dummy_package"
+from = "src"
