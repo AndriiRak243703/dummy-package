@@ -8,7 +8,8 @@ authors = [
 requires-python = ">=3.11"
 dependencies = [
     "numpy (>=2.4.4,<3.0.0)",
-    "scikit-learn (>=1.8.0,<2.0.0)"
+    "scikit-learn (>=1.8.0,<2.0.0)",
+    "typer (>=0.24.1,<0.25.0)"
 ]
 
 
@@ -20,3 +21,7 @@ build-backend = "poetry.core.masonry.api"
 [[tool.poetry.packages]]
 include = "dummy_package"
 from = "src"
+
+
+[tool.poetry.scripts]
+smart-predict = "dummy_package.cli:app"
